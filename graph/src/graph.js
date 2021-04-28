@@ -69,5 +69,37 @@ export default class Graph {
             }
         }
         return false;
-    }
+    };
+
+    breadthFirstReachable(startingNode, targetNode) {
+        if ((!this.adjacencyList.has(startingNode)) || (!this.adjacencyList.has(targetNode))) {
+            return false;
+        }
+        // create a queue
+        let queue = [startingNode];
+        // flag traversed nodes
+        let traversedNodes = new Set();
+        // iterate until collection's size is zero
+        while(queue.length) {
+            // take first element of the queue (it will also remove it from the queue)
+            const currentNode = queue.shift();
+            // if found return true
+            if (currentNode === targetNode) {
+                return true;
+            } else {
+                // add this node to traversed ones
+                traversedNodes.add(currentNode);
+                // get adjacency list for this node
+                const adjacencyList = this.adjacencyList.get(currentNode);
+                // add all ajacency nodes to the queue
+                adjacencyList.forEach(function(node) {
+                    if (!traversedNodes.has(node)) {
+                        queue.push(node);
+                    }
+                });
+            }
+        }
+        return false;
+    };
+
 }

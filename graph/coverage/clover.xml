@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1619638945276" clover="3.2.0">
-  <project timestamp="1619638945276" name="All files">
-    <metrics statements="30" coveredstatements="30" conditionals="14" coveredconditionals="13" methods="10" coveredmethods="10" elements="54" coveredelements="53" complexity="0" loc="30" ncloc="30" packages="1" files="1" classes="1"/>
+<coverage generated="1619639310320" clover="3.2.0">
+  <project timestamp="1619639310320" name="All files">
+    <metrics statements="44" coveredstatements="44" conditionals="22" coveredconditionals="21" methods="12" coveredmethods="12" elements="78" coveredelements="77" complexity="0" loc="44" ncloc="44" packages="1" files="1" classes="1"/>
     <file name="graph.js" path="/Users/rita/Desktop/code/key-concepts/graph/src/graph.js">
-      <metrics statements="30" coveredstatements="30" conditionals="14" coveredconditionals="13" methods="10" coveredmethods="10"/>
-      <line num="3" count="10" type="stmt"/>
-      <line num="7" count="19" type="stmt"/>
+      <metrics statements="44" coveredstatements="44" conditionals="22" coveredconditionals="21" methods="12" coveredmethods="12"/>
+      <line num="3" count="11" type="stmt"/>
+      <line num="7" count="27" type="stmt"/>
       <line num="11" count="3" type="cond" truecount="2" falsecount="0"/>
       <line num="12" count="1" type="stmt"/>
       <line num="14" count="2" type="stmt"/>
-      <line num="18" count="10" type="stmt"/>
-      <line num="19" count="10" type="stmt"/>
+      <line num="18" count="16" type="stmt"/>
+      <line num="19" count="16" type="stmt"/>
       <line num="23" count="5" type="cond" truecount="2" falsecount="0"/>
       <line num="24" count="1" type="stmt"/>
       <line num="26" count="4" type="stmt"/>
@@ -34,6 +34,20 @@
       <line num="65" count="19" type="cond" truecount="2" falsecount="0"/>
       <line num="66" count="10" type="stmt"/>
       <line num="71" count="1" type="stmt"/>
+      <line num="75" count="4" type="cond" truecount="4" falsecount="0"/>
+      <line num="76" count="2" type="stmt"/>
+      <line num="79" count="2" type="stmt"/>
+      <line num="81" count="2" type="stmt"/>
+      <line num="83" count="2" type="stmt"/>
+      <line num="85" count="9" type="stmt"/>
+      <line num="87" count="9" type="cond" truecount="2" falsecount="0"/>
+      <line num="88" count="1" type="stmt"/>
+      <line num="91" count="8" type="stmt"/>
+      <line num="93" count="8" type="stmt"/>
+      <line num="95" count="8" type="stmt"/>
+      <line num="96" count="15" type="cond" truecount="2" falsecount="0"/>
+      <line num="97" count="9" type="stmt"/>
+      <line num="102" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
