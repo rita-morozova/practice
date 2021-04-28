@@ -39,4 +39,35 @@ export default class Graph {
             this.adjacencyList.delete(name);
         }
     };
+
+    depthFirstReachable(startingNode, targetNode) {
+        if ((!this.adjacencyList.has(startingNode)) || (!this.adjacencyList.has(targetNode))) {
+            return false;
+        }
+        // create a stack
+        let stack = [startingNode];
+        // flag traversed nodes
+        let traversedNodes = new Set();
+        // iterate until collection's size is zero
+        while(stack.length) {
+            // take first element of the stack (and remove it)
+            const currentNode = stack.shift();
+            // if found return true
+            if (currentNode === targetNode) {
+                return true;
+            } else {
+                // add this node to traversed ones
+                traversedNodes.add(currentNode);
+                // get adjacency list for this node
+                const adjacencyList = this.adjacencyList.get(currentNode);
+                // add all ajacency nodes to the top of the stack
+                adjacencyList.forEach(function(node) {
+                    if (!traversedNodes.has(node)) {
+                        stack.unshift(node);
+                    }
+                });
+            }
+        }
+        return false;
+    }
 }
